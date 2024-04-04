@@ -1,8 +1,8 @@
 class ValidateAgentProperties():
-    """Simulation environment for SQL injection (SQLi) training."""
+    """Class is to be used in composition to define a larger agent class"""
     
     def __init__(self):
-        self._url = "http://152.42.132.100:8000/index.php"
+        self._url = "http://{ip-address}:8000/index.php"
         self._header = "{'User-Agent': 'Mozilla/5.0, RL-CTF'}"
         self._interaction_form_name = "email"
 
